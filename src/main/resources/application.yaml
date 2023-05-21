@@ -6,6 +6,14 @@ spring:
           uri: http://localhost:8081
           predicates:
             - Path=/api/v1/*
+        - id: Spring6ReactiveExperiments
+          uri: http://localhost:8082
+          predicates:
+            - Path=/api/v2/*
+        - id: Spring6ReactiveMongoExperiments
+          uri: http://localhost:8083
+          predicates:
+            - Path=/api/v3/*
 #      httpserver:
 #        wiretap: true
 #      httpclient:
